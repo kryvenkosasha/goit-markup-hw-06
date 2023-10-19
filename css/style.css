@@ -60,9 +60,9 @@ img {
 }
 
 .container {
-  width: 1158px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 .navigation {
@@ -216,16 +216,21 @@ address {
 
 .descr-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .descr-list-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+  width: 100%;
 }
 
 .descr-title {
-  font-weight: 500;
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -477,7 +482,7 @@ address {
   fill: #f4f4fd;
 }
 
-.backdrop {
+.backdrop { display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -750,4 +755,44 @@ address {
 
 .footer-form-icon{
   margin-left: 16px;
+}
+
+
+@media  screen and (min-width: 320px) {
+  .icon{
+    display: none;
+  }
+}
+
+@media  screen and (min-width: 768px){
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+  .descr-list-item{
+    width: calc((100% - 24px) / 2);
+  }
+
+  .descr-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.descr-title{
+  justify-content: start;
+}
+}
+
+@media  screen and (min-width: 1158px){
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+}
+
+.descr-list-item{
+    width: calc((100% - 72px) / 4);
+  }
 }
