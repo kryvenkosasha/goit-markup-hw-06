@@ -79,7 +79,6 @@ img {
   background-color: transparent;
   border: none;
   color: #ffffff;
-  margin-bottom: 88px;
 }
 
 .nav {
@@ -446,11 +445,15 @@ address {
 
 .footer-div {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 
 .footer-p-container {
-  margin-right: 120px;
+display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-logo {
@@ -483,6 +486,12 @@ address {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+}
+
+.soc-links-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-soc-links {
@@ -742,11 +751,14 @@ address {
 }
 
 .footer-form-div{
-  margin-left: 96px;
+  flex-direction: column;
+    display: flex;
+align-items: center;
 }
 
 .footer-form{
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
