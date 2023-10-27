@@ -81,7 +81,7 @@ img {
   background-color: transparent;
   border: none;
   color: #ffffff;
-  border: 1px solid #E7E9FC;
+  border: 1px solid #e7e9fc;
   border-radius: 50%;
 }
 
@@ -875,7 +875,7 @@ address {
   margin-left: 16px;
 }
 
-.menu-btn{
+.menu-btn {
   border: none;
   background-color: transparent;
 }
@@ -908,9 +908,9 @@ address {
     padding: 0 16px;
   }
 
-.logo{
-  margin-right: 120px;
-}
+  .logo {
+    margin-right: 120px;
+  }
 
   .descr-list-item {
     width: calc((100% - 24px) / 2);
@@ -939,9 +939,9 @@ address {
     width: calc((100% - 24px) / 2);
     margin: 0;
   }
-.portfolio-list-item{
-  width: calc((100% - 24px) / 2);
-}
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+  }
   .preview {
     padding: 112px 136px;
   }
@@ -964,14 +964,14 @@ address {
     padding: 0;
   }
 
-  .address-item{
+  .address-item {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
 
   .footer-div {
-    justify-content:flex-start;
+    justify-content: flex-start;
     flex-direction: row;
     align-items: start;
     flex-wrap: wrap;
@@ -998,7 +998,7 @@ address {
     gap: 24px;
   }
 
-  .modal{
+  .modal {
     width: 408px;
   }
 }
@@ -1009,37 +1009,46 @@ address {
     margin: 0 auto;
   }
 
-  .address-item{
+  .address-item {
     flex-direction: row;
     gap: 40px;
   }
 
-  .icon{
+  .icon {
     display: flex;
   }
 
-.description{
-  padding: 120px 0;
-}
+  .description {
+    padding: 120px 0;
+  }
 
-.descr{
-  font-weight: 400;
-}
+  .descr {
+    font-weight: 400;
+  }
 
   .descr-list-item {
     width: calc((100% - 72px) / 4);
   }
 
- .team{
-  padding: 120px 0; 
- }
-  
+  .team {
+    padding: 120px 0;
+  }
+
   .team-member {
     width: calc((100% - 72px) / 4);
   }
 
-  .portfolio{
+  .portfolio {
     padding: 120px 0;
   }
+}
 
+@media (min-resolution: 192dpi) {
+  .preview {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background@2x.jpg);
+  }
 }
